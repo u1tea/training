@@ -1,0 +1,27 @@
+#define MAX_N   (10)
+
+unsigned char u1_list[MAX_N] = {
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10
+};
+
+unsigned char test1(unsigned char u1_t)
+{
+  unsigned char u1_a;
+
+  if(u1_t < MAX_N){
+    u1_a = u1_list[u1_t];
+  }else{
+    u1_a = u1_list[MAX_N-1];
+  }
+
+  return u1_a;
+}
